@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter Search App</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h3>Hello user: <%- @screen_name %> <img src="<%- @profile_image_url %>" alt="<%- @screen_name %>" /></h3>
+        <a class="button" href="/logout">Log out</a>
+        <form id="search_form">
+          <input type="text" name="query" value="" placeholder="Search #" required>
+          <button type="submit">Search</button>
+        </form>
+        <div id="res_status" class="status"></div>
+        <div id="search_result" class="results"></div>
+    </div>
+    <script src="/primus/primus.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
