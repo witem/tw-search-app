@@ -1,6 +1,7 @@
 # Run instruction
-`npm install
-node app.js`
+`npm install`
+
+`node app.js`
 # Task
 Twitter Search App
 
